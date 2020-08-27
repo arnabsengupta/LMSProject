@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="softwaretestingmaterial" duration-ms="34084" started-at="2020-08-27T09:50:19 IST" finished-at="2020-08-27T09:50:53 IST">
+    <groups>
+    </groups>
+    <test name="testngTest" duration-ms="34084" started-at="2020-08-27T09:50:19 IST" finished-at="2020-08-27T09:50:53 IST">
+      <class name="LMSpackage.LMSTest2">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="openBrowser" is-config="true" duration-ms="1117" started-at="2020-08-27T09:50:28 IST" finished-at="2020-08-27T09:50:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="navigateAndverifyNumberOfCourses()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="navigateAndverifyNumberOfCourses" duration-ms="1035" started-at="2020-08-27T09:50:42 IST" finished-at="2020-08-27T09:50:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateAndverifyNumberOfCourses -->
+        <test-method status="PASS" signature="verifyLoggedIn()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="verifyLoggedIn" duration-ms="3486" started-at="2020-08-27T09:50:43 IST" finished-at="2020-08-27T09:50:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedIn -->
+        <test-method status="PASS" signature="navigateToMyAccountAndVerifyPage()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="navigateToMyAccountAndVerifyPage" duration-ms="1112" started-at="2020-08-27T09:50:47 IST" depends-on-methods="LMSpackage.LMSTest2.verifyLoggedIn" finished-at="2020-08-27T09:50:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToMyAccountAndVerifyPage -->
+        <test-method status="PASS" signature="navigateToCourseAndMarkComplete()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="navigateToCourseAndMarkComplete" duration-ms="1123" started-at="2020-08-27T09:50:48 IST" depends-on-methods="LMSpackage.LMSTest2.navigateToMyAccountAndVerifyPage" finished-at="2020-08-27T09:50:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCourseAndMarkComplete -->
+        <test-method status="PASS" signature="navigateToContactUsAndCompleteForm()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="navigateToContactUsAndCompleteForm" duration-ms="3317" started-at="2020-08-27T09:50:49 IST" depends-on-methods="LMSpackage.LMSTest2.navigateToCourseAndMarkComplete" finished-at="2020-08-27T09:50:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToContactUsAndCompleteForm -->
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:LMSpackage.LMSTest2@57855c9a]" name="closeBrowser" is-config="true" duration-ms="208" started-at="2020-08-27T09:50:53 IST" finished-at="2020-08-27T09:50:53 IST">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-30U0P6A', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ARNABS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 77d5fbd26d9c63616e0fbadd2f740407]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-30U0P6A', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ARNABS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 77d5fbd26d9c63616e0fbadd2f740407
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at LMSpackage.LMSTest2.closeBrowser(LMSTest2.java:102)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.afterRun(TestRunner.java:847)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- LMSpackage.LMSTest2 -->
+      <class name="LMSpackage.LMSTest1">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="openBrowser" is-config="true" duration-ms="9038" started-at="2020-08-27T09:50:19 IST" finished-at="2020-08-27T09:50:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyTitleFirstInfoBox()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="verifyTitleFirstInfoBox" duration-ms="12451" started-at="2020-08-27T09:50:30 IST" finished-at="2020-08-27T09:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleFirstInfoBox -->
+        <test-method status="PASS" signature="verifyTitleSecondMostPopularCourse()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="verifyTitleSecondMostPopularCourse" duration-ms="85" started-at="2020-08-27T09:50:42 IST" finished-at="2020-08-27T09:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleSecondMostPopularCourse -->
+        <test-method status="PASS" signature="verifyWebsiteHeading()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="verifyWebsiteHeading" duration-ms="96" started-at="2020-08-27T09:50:42 IST" finished-at="2020-08-27T09:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebsiteHeading -->
+        <test-method status="PASS" signature="verifyWebsiteTitle()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="verifyWebsiteTitle" duration-ms="23" started-at="2020-08-27T09:50:42 IST" finished-at="2020-08-27T09:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebsiteTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:LMSpackage.LMSTest1@22a67b4]" name="closeBrowser" is-config="true" duration-ms="883" started-at="2020-08-27T09:50:52 IST" finished-at="2020-08-27T09:50:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- LMSpackage.LMSTest1 -->
+    </test> <!-- testngTest -->
+  </suite> <!-- softwaretestingmaterial -->
+</testng-results>
