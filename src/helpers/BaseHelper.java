@@ -9,11 +9,13 @@ import org.testng.annotations.BeforeTest;
 public interface BaseHelper {
 
 	
-	WebDriver chromedriver = new ChromeDriver();
-	
+	WebDriver chromedriver = new ChromeDriver();	
 	WebDriverWait wdwait = new WebDriverWait(chromedriver, 1000);
+	
 	public static final String URL = "https://alchemy.hguy.co/lms";
 
+	
+	
 	@BeforeTest
 	public void openBrowser();
 	
